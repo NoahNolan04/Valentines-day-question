@@ -28,12 +28,6 @@ body {
     margin-top: 20px; /* Add space above the options */
 }
 
-#responsive-image {
-  width: 300px;  /* Sets the width to 300 pixels */
-  height: auto;  /* Automatically adjusts the height to maintain aspect ratio */
-  max-width: 100%; /* Ensures the image doesn't exceed its container width */
-}
-
 
 button {
     padding: 10px 20px; /* Set padding for buttons */
@@ -46,3 +40,4 @@ button {
     cursor: pointer; /* Set cursor to pointer on hover */
 
 }
+
