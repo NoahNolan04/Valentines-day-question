@@ -28,6 +28,13 @@ body {
     margin-top: 20px; /* Add space above the options */
 }
 
+#responsive-image {
+  width: 300px;  /* Sets the width to 300 pixels */
+  height: auto;  /* Automatically adjusts the height to maintain aspect ratio */
+  max-width: 100%; /* Ensures the image doesn't exceed its container width */
+}
+
+
 button {
     padding: 10px 20px; /* Set padding for buttons */
     margin: 0 10px; /* Set margin around buttons */
@@ -37,4 +44,5 @@ button {
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
+
 }
