@@ -28,7 +28,6 @@ body {
     margin-top: 20px; /* Add space above the options */
 }
 
-
 button {
     padding: 10px 20px; /* Set padding for buttons */
     margin: 0 10px; /* Set margin around buttons */
@@ -38,6 +37,4 @@ button {
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
-
 }
-
