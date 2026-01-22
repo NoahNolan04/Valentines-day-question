@@ -11,7 +11,7 @@ function selectOption(option) {
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
-        document.getElementById('no-button').innerText = 'You sure?'; 
+        document.getElementById('no-button').innerText = 'Are You sure?'; 
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
@@ -37,7 +37,7 @@ function flashRainbowColors(callback) {
         if (callback) {
             callback();
         }
-    }, 2000); // Flash colors for 2 seconds
+    }, 4000); // Flash colors for 4 seconds
 }
 
 // Function to display the cat.gif initially
@@ -47,7 +47,7 @@ function displayCat() {
     // Create a new Image element for the cat
     var catImage = new Image();
     // Set the source (file path) for the cat image
-    catImage.src = 'cat.gif'; // Assuming the cat image is named "cat.gif"
+    catImage.src = 'cat.jpg'; // Assuming the cat image is named "cat.jpg"
     // Set alternative text for the image (for accessibility)
     catImage.alt = 'Cat';
     // When the cat image is fully loaded, add it to the image container
