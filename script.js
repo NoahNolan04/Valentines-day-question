@@ -11,20 +11,14 @@ let noClickCount = 0;
 const noMessages = [
     "Are you sure?",
     "Like… Are you really sure?",
-    "What if I asked nicely?",
-    "Okay but what if I really wanted you to say yes?",
-    "I can't belive you've done this",
-    "Last chance… think about it",
-    "Really this is your last chance think this over"];
+    "See what you've done the cats are angry at you?",
+    "Really..."];
 
     const noImages = [
-    "images/sad.png",
-    "images/shocked.png",
-    "images/crying.png",
-    "images/heartbroken.png",
-    "images/crying.png",
-    "images/sad.png",
-    "images/start.png"];
+    "images/mama cat.gif",
+    "images/side eye mac.gif",
+    "images/AngrySpork.gif",
+    "images/angry mac.gif",
 
 function selectOption(choice) {
     const question = document.getElementById("question");
@@ -114,6 +108,7 @@ function displayCatHeart() {
 // Display the cat.gif initially
 
 displayCat();
+
 
 
 
