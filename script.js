@@ -17,8 +17,18 @@ const noMessages = [
     "Last chance… think about it",
     "Really this is your last chance think this over"];
 
+    const noImages = [
+    "images/sad.png",
+    "images/shocked.png",
+    "images/crying.png",
+    "images/heartbroken.png",
+    "images/crying.png",
+    "images/sad.png",
+    "images/start.png"];
+
 function selectOption(choice) {
     const question = document.getElementById("question");
+     const image = document.getElementById("reaction-image");
 
         if (option === 'yes') {
         // Flash rainbow colors
@@ -28,6 +38,7 @@ function selectOption(choice) {
     }
    if (choice === "no") {
         question.innerHTML = noMessages[noClickCount % noMessages.length];
+        image.src = noImages[noClickCount % noImages.length];
         noClickCount++;
     }
 }
@@ -103,6 +114,7 @@ function displayCatHeart() {
 // Display the cat.gif initially
 
 displayCat();
+
 
 
 
