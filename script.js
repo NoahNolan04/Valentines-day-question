@@ -25,19 +25,19 @@ function selectOption(option) {
 
 // Function to flash rainbow colors and then execute a callback function
 function flashRainbowColors(callback) {
-    var colors = ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#4b0082', '#9400d3'];
+    var colors = ['#ff0000', '#e91288', '#ffff00'];
     var i = 0;
     var interval = setInterval(function() {
         document.body.style.backgroundColor = colors[i];
         i = (i + 1) % colors.length;
-    }, 200); // Change color every 200 milliseconds
+    }, 400); // Change color every 400 milliseconds
     setTimeout(function() {
         clearInterval(interval);
         document.body.style.backgroundColor = ''; // Reset background color
         if (callback) {
             callback();
         }
-    }, 4000); // Flash colors for 4 seconds
+    }, 3000); // Flash colors for 3 seconds
 }
 
 // Function to display the cat.gif initially
@@ -79,3 +79,4 @@ function displayCatHeart() {
 // Display the cat.gif initially
 
 displayCat();
+
