@@ -1,5 +1,28 @@
 // script.js
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Arrays;
+import java.util.List;
 
+public class NoButtonApp {
+
+    // 1. Store messages in a List and manage the current index
+    private static List<String> messages = Arrays.asList(
+            "Message 1: Are you sure?",
+            "Message 2: Think again!",
+            "Message 3: The answer is still no?",
+            "Message 4: Last chance to say yes!"
+    );
+    private static int messageIndex = 0;
+    private static JLabel messageLabel; // A Swing component to display the text
+
+    public static void main(String[] args) {
+        // Ensure GUI creation is done on the Event Dispatch Thread (EDT)
+        SwingUtilities.invokeLater(NoButtonApp::createAndShowGUI);
+    }
+
+}
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
@@ -78,6 +101,7 @@ function displayCatHeart() {
 
 // Display the cat.gif initially
 displayCat();
+
 
 
 
