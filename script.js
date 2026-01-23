@@ -30,7 +30,7 @@ function flashRainbowColors(callback) {
     var interval = setInterval(function() {
         document.body.style.backgroundColor = colors[i];
         i = (i + 1) % colors.length;
-    }, 1000); // Change color every 400 milliseconds
+    }, 500); // Change color every 500 milliseconds
     setTimeout(function() {
         clearInterval(interval);
         document.body.style.backgroundColor = ''; // Reset background color
@@ -79,6 +79,7 @@ function displayCatHeart() {
 // Display the cat.gif initially
 
 displayCat();
+
 
 
 
