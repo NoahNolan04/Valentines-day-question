@@ -1,20 +1,41 @@
 // script.js
 
+
+
+
 // Function to handle button click events
 function selectOption(option) {
-    // Check which option was clicked
-    if (option === 'yes') {
+
+    // no click counter to print a new message everytime
+let noClickCount = 0;
+const noMessages = [
+    "Are you sure?",
+    "Like… Are you really sure?",
+    "What if I asked nicely?",
+    "Okay but what if I really wanted you to say yes?",
+    "I can't belive you've done this",
+    "Last chance… think about it",
+    "Really this is your last chance think this over"];
+
+function selectOption(choice) {
+    const question = document.getElementById("question");
+
+        if (option === 'yes') {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
+    }
+   if (choice === "no") {
+        question.innerHTML = noMessages[noClickCount % noMessages.length];
+        noClickCount++;
+    }
+}
+    // Check which option was clicked
+
         });
-    } else if (option === 'no') {
-        // Change text on the "No" button to "You sure?"
-        document.getElementById('no-button').innerText = 'Are You sure?'; 
-        else if (option === 'no') {
-        // Change text on the "No" button to "You sure?"
-        document.getElementById('no-button').innerText = 'Are You Really Sure?'; 
+    }
+      
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
@@ -82,6 +103,7 @@ function displayCatHeart() {
 // Display the cat.gif initially
 
 displayCat();
+
 
 
 
